@@ -4,6 +4,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { CatsModule } from './cats/cats.module';
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { AppService } from './app.service';
       useUnifiedTopology: true,
       useNewUrlParser: true,
     }),
+    CatsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
