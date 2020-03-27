@@ -11,7 +11,7 @@ import { CatsModule } from './cats/cats.module';
     ConfigModule.forRoot({ expandVariables: true, isGlobal: true }),
     MongooseModule.forRoot(process.env.MONGO_STRING, {
       useUnifiedTopology: true,
-      useNewUrlParser: true,
+      useNewUrlParser: true, //teste
     }),
     CatsModule,
   ],
