@@ -22,6 +22,7 @@ export class ClientsController {
     @Request() req,
     @Query() query,
   ): Promise<PaginateResult<IClient>> {
+    //teste
     const { page = 1, limit = 5 } = query;
     return this.clientService.getAll(req.filters, page, limit);
   }
